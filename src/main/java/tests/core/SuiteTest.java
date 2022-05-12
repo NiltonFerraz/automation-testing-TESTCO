@@ -8,7 +8,7 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 import agency.catalagency.TestIncludeAgency;
-import engine.values.TestIncludeValues;
+import en.values.TestIncludeValues;
 
 @RunWith(Suite.class)
 @SuiteClasses({ 

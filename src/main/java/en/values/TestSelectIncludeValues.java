@@ -1,4 +1,4 @@
-package engine.values;
+package en.values;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -17,7 +17,7 @@ import org.junit.Test;
 
 import tests.coreBD.ConnectionFactory;
 
-public class TestSelectExcludeValues {
+public class TestSelectIncludeValues {
 
 	@Test
 	public void inicializa( ) {
@@ -27,7 +27,7 @@ public class TestSelectExcludeValues {
 				+ "and lov_vals.lscode = 15");
 		
 		String dir = "C:\\Users\\nilton.ferraz\\TestesBGT\\Engine\\ListaValores\\";
-		String file = "alteracao.csv";
+		String file = "inclusao.csv";
 		
 		try {
 			Connection con = new ConnectionFactory().getConnection();

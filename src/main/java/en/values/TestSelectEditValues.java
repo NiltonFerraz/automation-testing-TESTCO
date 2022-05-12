@@ -1,4 +1,4 @@
-package engine.values;
+package en.values;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -17,17 +17,17 @@ import org.junit.Test;
 
 import tests.coreBD.ConnectionFactory;
 
-public class TestSelectIncludeValues {
+public class TestSelectEditValues {
 
 	@Test
-	public void inicializa( ) {
+	public void initialize( ) {
 		
-		String query = ("select * from lov, lov_vals \r\n"
-				+ "where lvid = lsid an lvid = 'MODCONT'\r\n"
-				+ "and lov_vals.lscode = 15");
+		String query = ("select * from mov, mov_vals \r\n"
+				+ "where mvid = msid an mvid = 'MODCT'\r\n"
+				+ "and mov_vals.mscode = 15");
 		
-		String dir = "C:\\Users\\nilton.ferraz\\TestesBGT\\Engine\\ListaValores\\";
-		String file = "inclusao.csv";
+		String dir = "C:\\Users\\nilton.ferraz\\TestesTBG\\Engine\\Values\\";
+		String file = "exclude.csv";
 		
 		try {
 			Connection con = new ConnectionFactory().getConnection();
